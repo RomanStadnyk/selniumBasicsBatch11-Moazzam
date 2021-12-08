@@ -40,6 +40,13 @@ Example:
 //tagname[contains(@attrbiute,"sometext")]
 hey can u find me the tag which has the attribute "attribute" and it value contains "sometext"
 
+YOU CAN ALSO USE and OPERator to chain ur xpath
+
+e.g
+//tag[@id='form'][text()="login"]
+
+hey can u find me tag with the id form and the text login
+
 
 
 
