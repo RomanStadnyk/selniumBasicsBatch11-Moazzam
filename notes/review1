@@ -1,0 +1,9 @@
+
+
+get() - further actions such as back, forward, refresh not possible
+navigate() - further actions such as back, forward, refresh possible
+
+close () - close will only close the current tab
+quit() - quit close the entire browser
+
+
