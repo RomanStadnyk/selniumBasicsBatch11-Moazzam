@@ -1,0 +1,50 @@
+**********Sellenium class05*****
+
+
+----------------driver commands------------
+  
+getText() -- String value
+gets the text if there is any in the webelement
+getAttribute() -- String value
+gets the attribute value of the seccified attribute
+
+****Radio button****
+WE CAN ONLY SELECT ONE RADIO BTN AT A TIME	
+
+isDisplayed()-->boolean 
+checks if the particular webElment is dipalyed/present on the page or not
+
+isEnabled()-->boolean
+checks if you can select that radio btn or not
+
+isSelected()-->boolean
+it tells wether the partiular btn is selected or not
+
+
+****************Drop Downs****************
+Handling checkboxes and radiobuttons:
+-- if you have only 1 checkbox or radiobutton - you can just click on it
+-- if you have multiple choices - store them in List and loop through
+
+DropDowns
+Dropdown is a menu which gives us an opportunity to select one or
+multiple options
+
+Types of dropdowns:
+1. Single select
+2. Multiple select
+
+Handling dropdowns:
+1. click on dropdown and click on the option
+2. using Select class
+            in order to use Select class
+            we need to make sure our dropdown has
+            select tag
+
+Selecting an option from dropdown can be done in 3 ways:
+1. by index
+2. by visible text
+3. by value
+
+
+

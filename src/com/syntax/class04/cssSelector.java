@@ -21,7 +21,7 @@ public class cssSelector {
 
         WebElement result = driver.findElement(By.cssSelector("span#displayvalue"));
         System.out.println(result.getText());
-        
+
 
     }
 }
