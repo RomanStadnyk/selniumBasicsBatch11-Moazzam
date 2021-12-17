@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.List;
+
 public class dropDown {
 
     public static void main (String[] args) throws InterruptedException {
@@ -38,7 +40,21 @@ public class dropDown {
 //        select.selectByVisibleText("Thursday");
 
 //        Select by value\
-        select.selectByValue("Wednesday");
+//        select.selectByValue("Wednesday");
+
+        List<WebElement> allOptions = select.getOptions();
+        int Size=allOptions.size();
+        System.out.println(Size);
+
+//        iterate through list all options and get the text of each option
+
+        for(int i=0 ;i<Size ;i++){
+
+           String OptionText=allOptions.get(i).getText();
+           System.out.println( OptionText);
+
+        }
+        
 
 
 
