@@ -6,9 +6,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.Iterator;
+import java.util.List;
+
 public class multippleSelectDD {
 
-    public static void main (String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
 
         System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -22,7 +25,7 @@ public class multippleSelectDD {
         WebElement statesDD = driver.findElement(By.cssSelector("select#multi-select"));
 
 //        we can use select class so we will make an onject of sleect class
-        Select select=new Select(statesDD);
+        Select select = new Select(statesDD);
 
 //        check if the drop down is multiple
         boolean ismul = select.isMultiple();
@@ -47,6 +50,19 @@ public class multippleSelectDD {
         Thread.sleep(2000);
 
         select.deselectByVisibleText("Texas");
+
+
+//        to use iterator to get all the options text and print in console
+
+//        get all the options
+        List<WebElement> options = select.getOptions();
+
+        Iterator <WebElement> it=options.iterator();
+        while(it.hasNext()){
+              System.out.println(it.next().getText());
+
+        }
+
 
 
 
