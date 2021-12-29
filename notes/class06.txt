@@ -3,7 +3,7 @@
 What is a drop Down?
 
 1.Single Select-->one option
-2.multiple select-->more then one
+2.multiple select-->more than one
 
 Two methods to handle drop downs:
 1.Click on the drop Down and then Select the option
