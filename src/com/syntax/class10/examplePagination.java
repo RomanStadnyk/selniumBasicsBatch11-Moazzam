@@ -65,7 +65,12 @@ public class examplePagination {
 
 //            check if the row contains the id we are looking for
                 if (text.contains("26335A")) {
-                    System.out.println(text);
+                    System.out.println("the index of the id in table is : "+i);
+                    String xpath="//table[@id='resultTable']/tbody/tr[" + (i + 1)+ "]/td/input";
+                    WebElement checkbox = driver.findElement(By.xpath(xpath));
+                    System.out.println("the xpath to the checkbox is : " +xpath);
+                    checkbox.click();
+
 //                  we found the desried row so we need to end the while loop
                     notFound=false;
 //                 we found the desrie row so we donot want to iterate the rest
