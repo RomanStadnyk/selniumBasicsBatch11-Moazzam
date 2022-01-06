@@ -8,14 +8,18 @@ import org.openqa.selenium.support.PageFactory;
 public class loginPageWithPageFactory extends CommonMethods {
 
     @FindBy(id="txtUsername")
-    public WebElement username;
-    @FindBy(id="txtPassword")
-    public WebElement password;
-    @FindBy (id="btnLogin")
-    public  WebElement loginBtn;
+    public WebElement userName;
 
-    public loginPageWithPageFactory(){
-       PageFactory.initElements(driver,this);
+    @FindBy(name="txtPassword")
+    public WebElement password;
+
+    @FindBy(name="Submit")
+    public WebElement loginbt;
+
+
+    public  loginPageWithPageFactory(){
+
+        PageFactory.initElements(driver,this);
     }
+
 }
-//break till 9:30
