@@ -5,7 +5,9 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
+import javax.swing.*;
 import java.io.File;
 import java.io.IOException;
 
@@ -33,6 +35,7 @@ public class CommonMethods extends BaseClass {
          catch (IOException e) {
              e.printStackTrace();
          }
+
 
      }
 }
